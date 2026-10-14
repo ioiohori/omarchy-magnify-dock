@@ -1,4 +1,18 @@
-# Magnify Dock for Omarchy
+# Magnify Dock for Omarchy (plain icons fork)
+
+> Fork of [marcho78/omarchy-magnify-dock](https://github.com/marcho78/omarchy-magnify-dock)
+> that adds two things:
+>
+> * **No tile behind icons**: a **None** tile shape removes the coloured
+>   tile (and its shadow and highlight) so the bare app icon sits on the dock.
+> * **Uniform icon size**: every icon's visible artwork is measured once and
+>   scaled to the same optical size, so icons with built-in padding,
+>   edge-to-edge artwork and round icons line up the way they do on macOS.
+>   Square icons are drawn slightly smaller than round ones because they read
+>   larger at the same width. Works with every tile shape; can be turned off.
+>
+> Both live under **Dock Settings → Appearance → Tiles and capsule**.
+> Everything else is upstream, described below.
 
 A macOS-style dock for [Omarchy](https://omarchy.org): frosted capsule,
 pointer magnification wave, launch bounce, drag-to-reorder, live window
@@ -21,16 +35,16 @@ design, the drawer, previews, and most settings are new.
 ## Install
 
 ```bash
-omarchy plugin add https://github.com/marcho78/omarchy-magnify-dock.git --enable
+omarchy plugin add https://github.com/ioiohori/omarchy-magnify-dock.git --enable
 ```
 
 The dock appears at the bottom of every monitor. Right-click the launcher
 tile (the dotted square) for **Dock Settings**, a wide dialog with pages for
 Appearance, Colors, Windows, Dock items, Behavior and Presets.
 
-If you had `wdg.dock` installed, disable it first with
-`omarchy plugin disable wdg.dock`. Both docks share the same config file,
-so your pinned apps carry over.
+If you had `marcho78.magnify-dock` or `wdg.dock` installed, disable it first
+(`omarchy plugin disable marcho78.magnify-dock`). They share the same config
+file, so your pinned apps and settings carry over.
 
 ### Keybind for the app drawer
 
@@ -68,7 +82,10 @@ Everything applies live and is saved to `~/.config/omarchy/dock-pinned-macos.jso
 **Appearance**: icon size, magnification, spacing, background opacity, text
 size, window preview width and height, recent apps shown.
 
-**Icon shape**: Rounded, Circle, or Square.
+**Icon shape**: Rounded, Circle, Square, or None (bare icons, no tile).
+
+**Uniform icon size** (on by default): scales each icon's visible artwork to
+the same optical size instead of drawing every image file at the same size.
 
 **Colors**: **Follow Omarchy theme** (on by default) takes the dock, drawer
 and accent colours from the current theme. Turn it off to pick your own dock,
@@ -114,7 +131,7 @@ for example `o.bind("SUPER + SHIFT + D", "Dock: work preset", "omarchy-shell mag
 ## Removal
 
 ```bash
-omarchy plugin remove marcho78.magnify-dock
+omarchy plugin remove ioiohori.magnify-dock
 ```
 
 Your pins, settings and presets stay in `~/.config/omarchy/dock-pinned-macos.json`
@@ -164,7 +181,9 @@ app or window name is rendered as plain text.
 ## Credits
 
 Upstream dock by [wisangdg](https://github.com/wisangdg), MIT. Redesign,
-drawer, previews and settings by [@devsec_ai](https://x.com/devsec_ai).
+drawer, previews and settings by [@devsec_ai](https://x.com/devsec_ai)
+([marcho78](https://github.com/marcho78/omarchy-magnify-dock)). Plain tiles
+and uniform icon sizing by [ioiohori](https://github.com/ioiohori).
 
 ## License
 

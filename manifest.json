@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "marcho78.magnify-dock",
-  "name": "Magnify Dock",
-  "version": "2.0.0",
-  "author": "marcho78",
+  "id": "ioiohori.magnify-dock",
+  "name": "Magnify Dock (plain icons)",
+  "version": "2.1.0",
+  "author": "ioiohori (fork of marcho78)",
   "license": "MIT",
-  "description": "Frosted-glass macOS-style dock for Omarchy: pointer magnification wave, launch bounce, drag reordering, window picker with live previews, built-in app drawer, badges, folder and trash tiles, presets, and auto-hide. Redesigned fork of wdg.dock.",
+  "description": "Fork of marcho78.magnify-dock that adds a \"None\" tile shape (bare icons, no coloured tile behind them) and macOS-style uniform icon sizing, which scales every icon's visible artwork to the same optical size.",
   "kinds": [
     "panel"
   ],
