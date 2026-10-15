@@ -23,7 +23,7 @@ Item {
   property color accent: Color.accent
   property string fontFamily: Style.font.family
   property string tileShape: "rounded"
-  property bool uniformIcons: true
+  property bool uniformIcons: false
   // Badge: a count reported by the app (Unity LauncherEntry) and/or an
   // urgent window. Count wins; urgent alone shows a dot.
   property int badgeCount: 0

@@ -20,7 +20,7 @@ Item {
   property real size: 38
   property real iconRatio: 0.66
   property string shape: "rounded"      // rounded | circle | square | none
-  property bool uniform: true
+  property bool uniform: false
   readonly property bool plain: shape === "none"
   readonly property real radiusRatio: shape === "circle" ? 0.5 : (shape === "square" ? 0.12 : 0.24)
   property string fontFamily: Style.font.family

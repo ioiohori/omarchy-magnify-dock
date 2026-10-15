@@ -70,7 +70,7 @@ size, window preview width and height, recent apps shown.
 
 **Icon shape**: Rounded, Circle, Square, or None (bare icons, no tile).
 
-**Uniform icon size** (on by default): scales each icon's visible artwork to
+**Uniform icon size** (off by default): scales each icon's visible artwork to
 the same optical size instead of drawing every image file at the same size,
 so icons with built-in padding, edge-to-edge artwork and round icons line up.
 

@@ -6,7 +6,7 @@ var defaultSettings = {
   dockColor: "#12141a", drawerColor: "#0a0c11", accentColor: "", previewColor: "",
   windowPreviews: true, previewWidth: 220, previewHeight: 220,
   themeColors: true, recentApps: false, recentCount: 4,
-  tileShape: "rounded", uniformIcons: true,
+  tileShape: "rounded", uniformIcons: false,
   showBackground: true, collapsible: false,
   badges: true, showTrash: false, folders: []
 };

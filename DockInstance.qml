@@ -40,7 +40,7 @@ Item {
   readonly property real surfaceAlpha: Math.sqrt(Math.max(0, Math.min(1, root.preferences.opacity)))
   readonly property string tileShape: root.preferences.tileShape || "rounded"
   readonly property real tileRadiusRatio: DockModel.tileRadiusRatio(root.tileShape)
-  readonly property bool uniformIcons: root.preferences.uniformIcons !== false
+  readonly property bool uniformIcons: root.preferences.uniformIcons === true
   readonly property bool themeColors: root.preferences.themeColors !== false
   readonly property color dockColor: root.themeColors ? Color.background : (root.preferences.dockColor || "#12141a")
   readonly property color drawerColor: root.themeColors ? Qt.darker(Color.background, 1.15) : (root.preferences.drawerColor || "#0a0c11")

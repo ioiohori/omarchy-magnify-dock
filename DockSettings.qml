@@ -531,7 +531,7 @@ DockGlass {
             width: parent.width
             label: "Uniform icon size"
             sub: "Scale each icon's visible artwork to the same optical size"
-            on: root.settings.uniformIcons !== false
+            on: root.settings.uniformIcons === true
             onToggled: root.preferenceChanged("uniformIcons", !on)
           }
           Item { width: 1; height: 8 }
