@@ -14,6 +14,8 @@
 > Both live under **Dock Settings → Appearance → Tiles and capsule**.
 > Everything else is upstream, described below.
 
+![Before and after](screenshots/plain-icons-compare.png)
+
 A macOS-style dock for [Omarchy](https://omarchy.org): frosted capsule,
 pointer magnification wave, launch bounce, drag-to-reorder, live window
 previews, a built-in app drawer, and a settings card for everything.
