@@ -34,7 +34,7 @@ function normalizeSettings(input) {
   input = input && typeof input === "object" ? input : {};
   var result = {};
   var ranges = {
-    iconSize: [24, 64], magnification: [1, 2], spacing: [2, 16],
+    iconSize: [24, 64], magnification: [1, 2], spacing: [0, 16],
     opacity: [0.2, 1], textScale: [0.8, 1.6], previewWidth: [120, 640], previewHeight: [80, 480], recentCount: [1, 8], revealDelay: [0, 1000], hideDelay: [100, 2000]
   };
   for (var key in ranges) {

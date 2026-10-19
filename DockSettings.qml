@@ -517,7 +517,7 @@ DockGlass {
             rowSpacing: 0
             SliderRow { width: pageColumn.half; key: "iconSize"; label: "Icon size"; min: 24; max: 64; step: 1; fmt: "px" }
             SliderRow { width: pageColumn.half; key: "magnification"; label: "Magnification"; min: 1; max: 2; step: 0.05; fmt: "x" }
-            SliderRow { width: pageColumn.half; key: "spacing"; label: "Spacing"; min: 2; max: 16; step: 1; fmt: "px" }
+            SliderRow { width: pageColumn.half; key: "spacing"; label: "Spacing"; min: 0; max: 16; step: 1; fmt: "px" }
             SliderRow { width: pageColumn.half; key: "textScale"; label: "Text size"; min: 0.8; max: 1.6; step: 0.05; fmt: "%" }
           }
           SectionTitle { title: "Tiles and capsule" }
