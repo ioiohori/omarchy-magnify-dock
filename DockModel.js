@@ -479,7 +479,7 @@ function buildDockItems(toplevels, desktopEntries, appLibrary, Quickshell, custo
     if (!normKey) normKey = rawAppId || ("win_" + k);
 
     if (!runningMap[normKey]) {
-      var name = (dEntry && dEntry.name) ? dEntry.name : (toplevel.title || rawAppId);
+      var name = (dEntry && dEntry.name) ? dEntry.name : rawAppId;
       var icn = (dEntry && dEntry.icon) ? dEntry.icon : rawAppId;
       var iconPath = resolveIcon(icn, appLibrary, Quickshell);
 
