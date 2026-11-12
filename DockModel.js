@@ -212,6 +212,10 @@ var nonAlnumRe = /[^a-z0-9]/g;
 function cleanAppId(id) {
   if (!id) return "";
   var s = String(id).trim().toLowerCase().replace(desktopSuffixRe, "");
+  // Web app classes ("chrome-youtube.com__-Default") are not reverse-DNS ids:
+  // key them by site host, or every ".com" web app collapses to "comdefault".
+  var webHost = webAppHostFromClass(s);
+  if (webHost) return "webapp" + webHost.replace(nonAlnumRe, "");
   // For reverse-DNS identifiers (e.g. org.gnome.Nautilus, io.github.user.app, dev.zed.Zed, com.spotify.Client)
   if (s.indexOf(".") !== -1) {
     var parts = s.split(".");
